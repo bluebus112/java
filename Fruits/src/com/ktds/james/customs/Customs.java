@@ -67,6 +67,7 @@ public class Customs {
 	 * @param owner
 	 */
 	public void buy(Owner owner) {
+                  // 객체타입 객체명		
 		owner.sell(this);
 		
 		this.fruitsQuantity++;
