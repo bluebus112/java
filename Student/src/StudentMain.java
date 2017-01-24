@@ -17,6 +17,10 @@ public class StudentMain {
 //		student.study();
 //		student.test();
 		
+		Student jjh = new Student();
+		jjh.setName("정지호");
+		
+		
 		
 	}
 
