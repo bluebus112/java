@@ -12,7 +12,7 @@ import com.ktds.jjh.seller.Seller;
 public class Buyer {
 
 	/**
-	 * 상품개수
+	 * 구매한 상품 개수
 	 */
 	private int productQuantity;
 
@@ -36,7 +36,7 @@ public class Buyer {
 		System.out.println(this);
 	}
 	/**
-	 * 상품 개수를 초기화 또는 갱신함.
+	 * ProductQuantity의 값을 변경 할 수 있게 setter를 이용함.
 	 * 
 	 * @param productQuantity
 	 */

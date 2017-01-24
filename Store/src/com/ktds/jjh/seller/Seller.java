@@ -8,19 +8,21 @@ public class Seller {
 	 * 상품 가격
 	 */
 	private final int PRICE = 2500;
-	
 	/**
 	 * 판매가자 가진 금액
 	 */
 	private int money;
-	
 	/**
 	 * 판매자가 가진 상품의 개수
 	 */
 	private int productQuantity;
 	
+	/*
+	 * 생성자 만들기
+	 */
 	public Seller(int productQuantity, int money) {
 		System.out.println("판매자를 생성합니다!");
+		
 		setProductQuantity(productQuantity);
 		setMoney(money);
 		
