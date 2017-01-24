@@ -1,7 +1,7 @@
 
 public class Calculator {
 	
-	public void printComputetResult() {
+	public void printComputeResult() {
 		int result = 1 + 1;
 		System.out.println(result);
 	}
@@ -13,10 +13,24 @@ public class Calculator {
 	 * @param numberTwo
 	 */
 	
-	public void printComputeTesult(int numberOne, int numberTwo) {
+	public void printComputeResult(int numberOne, int numberTwo) {
 		int result = numberOne + numberTwo;
 		System.out.println(result);
 		
+	}
+	/**
+	 * 숫자 두 개를 전달 받아 곱한 뒤 출력하고 반환한다.
+	 * 
+	 * @param numberOne : int 첫 번째 숫자.
+	 * @param numberTwo : int 두 번째 숫자.
+	 * @return : int numberOne * numberTwo
+	 */
+	
+	public int getAndPrintMultiplicationResult(int numberOne, int numberTwo) {
+		int result = numberOne * numberTwo;
+		System.out.println(result);
+		
+		return result;
 	}
 
 }
