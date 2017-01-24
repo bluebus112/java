@@ -7,8 +7,8 @@ public class FruitsMain {
 	
 	public void start() {
 		
-		Customs james = new Customs(0, 10000);
-		Owner petter = new Owner(6, 10000000);
+		Customs james = new Customs(100000, 0);
+		Owner petter = new Owner(0, 500);
 		
 		james.buy(petter);
 		
@@ -19,4 +19,7 @@ public class FruitsMain {
 		
 	}
 
+	public static void main(String[] args) {
+		new FruitsMain().start();
+	}
 }

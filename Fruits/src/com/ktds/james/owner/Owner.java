@@ -8,7 +8,7 @@ public class Owner {
 	/**
 	 * 상품의 가격 정의
 	 */
-	private final int PRICE = 50000;
+	private final int PRICE = 5000;
 	/*
 	 * 주인의 가진 금액
 	 */
@@ -24,7 +24,7 @@ public class Owner {
 	 * 생성자 만들기-값을 초기화
 	 */
 	public Owner(int money, int itemsQuantity) {
-		System.out.println("상점 주인을 생성합니다.(생성자");
+		System.out.println("상점 주인을 생성합니다.");
 		
 		setMoney(money);
 		setItemsQuantity(itemsQuantity);
