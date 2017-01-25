@@ -41,8 +41,9 @@ public class Customs {
 	
 	public void pay( RentStore rentStore ){
 		
+		//money = useBicycles;
 		
-		this.money -= (money -rentStore.getPRICE());
+		this.money -= (useBicycles*rentStore.getPRICE());
 		
 	}
 

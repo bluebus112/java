@@ -12,7 +12,7 @@ public class Main {
 		rentStore.setMoney(50000);
 		rentStore.setPRICE(5000);
 
-		Customs customs = new Customs(2, 10000, "James");
+		Customs customs = new Customs(4, 10000, "James");
 		
 		rentStore.rent(customs);
 
