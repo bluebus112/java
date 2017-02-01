@@ -6,5 +6,9 @@ public interface NewsBiz {
 	
 	public void addNewNews();
 	
+	
+	
+	
+	
 
 }
