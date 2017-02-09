@@ -1,25 +1,76 @@
 package com.ktds.jjh.hr.vo;
 
+import com.ktds.jjh.dao.support.annotations.Types;
+
 public class EmployeesVO {
 
 	/**
 	 * 컬럼명을 변수명에 맞춰 작성 겟터 셋터 생성 vo작성 완료
 	 */
+	@Types
 	private int employeeId;
+	
+	@Types
 	private String firstName;
+	
+	@Types
 	private String lastName;
+	
+	@Types
 	private String email;
+	
+	@Types
 	private String phoneNumber;
+	
+	@Types
 	private String hireDate;
+	
+	@Types
 	private String jobId;
+	
+	@Types
 	private int salary;
+	
+	@Types
 	private double commissionPct;
+	
+	@Types
 	private int managerId;
+	
+	// 알리아스를 구분하기 위해 추가로 설정을 해준다. 
+	@Types(alias = "D_DEPARTMENT_ID")
 	private int departmentId;
-
+	
 	private JobsVO jobs;
+	// private RegionsVO regionsVO;
+	private CountriesVO contriesVO;
+	
+	private DepartmentVO departmentVO;
 
-	// private DepartmentsVO departments;
+
+	public DepartmentVO getDepartmentVO() {
+		
+		if( departmentVO == null) {
+			departmentVO = new DepartmentVO();
+		}
+		return departmentVO;
+	}
+
+	public void setDepartmentVO(DepartmentVO departmentVO) {
+		this.departmentVO = departmentVO;
+	}
+
+	public CountriesVO getContriesVO() {
+
+		if (contriesVO == null) {
+			contriesVO = new CountriesVO();
+		}
+		return contriesVO;
+	}
+
+	public void setContriesVO(CountriesVO contriesVO) {
+		this.contriesVO = contriesVO;
+	}
 
 	public JobsVO getJobs() {
 		if (jobs == null) {

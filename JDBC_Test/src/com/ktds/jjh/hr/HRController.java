@@ -5,22 +5,20 @@ import com.ktds.jjh.hr.biz.HRBizImpl;
 
 public class HRController {
 
-	public void start() {
+	HRBiz hrBizs = new HRBizImpl();
 
-		HRBiz hrBiz = new HRBizImpl();
-		hrBiz.printAllEmployees();
-		
-		HRBiz hrBizs = new HRBizImpl();
-		hrBizs.printAllEmployeesWithJobs();
-		
-		
+	public void start() {
+		hrBizs.findOneEmployees(125);
 	}
 	
-	
+	public void startTwo() {
+		hrBizs.printAllEmployees();
+	}
 
 	public static void main(String[] args) {
 
-		new HRController().start();
+		//new HRController().start();
+		new HRController().startTwo();
 
 	}
 
