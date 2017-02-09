@@ -7,6 +7,7 @@ import com.ktds.jjh.hr.dao.HrDaoImpl;
 import com.ktds.jjh.hr.vo.DepartmentVO;
 import com.ktds.jjh.hr.vo.EmployeesVO;
 
+
 public class HRBizImpl implements HRBiz {
 
 	private HRDao hrDao;
@@ -36,15 +37,42 @@ public class HRBizImpl implements HRBiz {
 
 	}
 
-	@Override
-	public void printAllDepartment() {
-		List<DepartmentVO> department = hrDao.getAllDepartment();
+//	@Override
+//	public void printAllDepartment() {
+//		List<DepartmentVO> department = hrDao.getAllDepartment();
+//
+//		for (DepartmentVO departments : department) {
+//			System.out.print(departments.getDepartmentId() + "\t");
+//			System.out.print(departments.getDepartmentName() + "\t");
+//			System.out.print(departments.getManagerId() + "\t");
+//			System.out.println(departments.getLocationId() + "\t");
+//		}
+//
+//	}
 
-		for (DepartmentVO departments : department) {
-			System.out.print(departments.getDepartmentId() + "\t");
-			System.out.print(departments.getDepartmentName() + "\t");
-			System.out.print(departments.getManagerId() + "\t");
-			System.out.println(departments.getLocationId() + "\t");
+	@Override
+	public void printAllEmployeesWithJobs() {
+
+		List<EmployeesVO> allEmployees = hrDao.getAllEmployeesWithJobs();
+
+		for (EmployeesVO employeesVO : allEmployees) {
+			System.out.print(employeesVO.getEmployeeId() + "\t");
+			System.out.print(employeesVO.getFirstName() + "\t");
+			System.out.print(employeesVO.getLastName() + "\t");
+			System.out.print(employeesVO.getEmail() + "\t");
+			System.out.print(employeesVO.getPhoneNumber() + "\t");
+			System.out.print(employeesVO.getHireDate() + "\t");
+			System.out.print(employeesVO.getJobId() + "\t");
+			System.out.print(employeesVO.getSalary() + "\t");
+			System.out.print(employeesVO.getCommissionPct() + "\t");
+			System.out.print(employeesVO.getManagerId() + "\t");
+			System.out.print(employeesVO.getDepartmentId() + "\t");
+			System.out.print(employeesVO.getJobs().getJobId()+"\t");
+			System.out.print(employeesVO.getJobs().getJobTitle()+"\t");
+			System.out.print(employeesVO.getJobs().getMinSalary()+"\t");
+			System.out.println(employeesVO.getJobs().getMaxSalary()+"\t");
+			
+			
 		}
 
 	}

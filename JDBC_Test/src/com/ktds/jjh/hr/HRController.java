@@ -11,7 +11,9 @@ public class HRController {
 		hrBiz.printAllEmployees();
 		
 		HRBiz hrBizs = new HRBizImpl();
-		hrBizs.printAllDepartment();
+		hrBizs.printAllEmployeesWithJobs();
+		
+		
 	}
 	
 	

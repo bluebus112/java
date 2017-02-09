@@ -9,9 +9,11 @@ public interface HRDao {
 
 	public List<EmployeesVO> getAllEmployees();
 	
-	public List<DepartmentVO> getAllDepartment();
+	//public List<DepartmentVO> getAllDepartment();
 	
-	public List<EmployeesVO> getAllEmployeesWithDepartments();
+	//public List<EmployeesVO> getAllEmployeesWithDepartments();
+	
+	public List<EmployeesVO> getAllEmployeesWithJobs();
 	
 	
 

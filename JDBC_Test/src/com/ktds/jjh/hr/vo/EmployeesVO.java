@@ -3,9 +3,7 @@ package com.ktds.jjh.hr.vo;
 public class EmployeesVO {
 
 	/**
-	 * 컬럼명을 변수명에 맞춰 작성
-	 * 겟터 셋터 생성
-	 * vo작성 완료
+	 * 컬럼명을 변수명에 맞춰 작성 겟터 셋터 생성 vo작성 완료
 	 */
 	private int employeeId;
 	private String firstName;
@@ -18,8 +16,21 @@ public class EmployeesVO {
 	private double commissionPct;
 	private int managerId;
 	private int departmentId;
-	
-	//private DepartmentsVO departments;
+
+	private JobsVO jobs;
+
+	// private DepartmentsVO departments;
+
+	public JobsVO getJobs() {
+		if (jobs == null) {
+			jobs = new JobsVO();
+		}
+		return jobs;
+	}
+
+	public void setJobs(JobsVO jobs) {
+		this.jobs = jobs;
+	}
 
 	public int getEmployeeId() {
 		return employeeId;

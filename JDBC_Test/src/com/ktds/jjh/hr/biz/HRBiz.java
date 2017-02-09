@@ -4,6 +4,9 @@ public interface HRBiz {
 
 	public void printAllEmployees();
 	
-	public void printAllDepartment();
+	//public void printAllDepartment();
+	
+	public void printAllEmployeesWithJobs();
+	
 
 }
